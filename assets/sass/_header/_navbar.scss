@@ -1,0 +1,35 @@
+
+
+.header {
+    min-height:50px;
+    .navbar-greenhouse{
+        background-color:$light-color;
+        box-shadow: 0 4px 10px -10px rgba(0,0,0,.6);
+        border-bottom-width: 1px;
+        border-top-width: 0;
+        border-bottom-style: solid;
+        border-top-style: solid;
+        border-color: rgba(234,234,234,1);
+        li{
+            font-weight:$medium-font-weight;
+            .nav-link, .dropdown-menu {
+                color:$text-color;
+                font-size:$small-font-size;
+                border:none;
+                text-transform:uppercase;
+                font-weight:$medium-font-weight;
+            }
+            .nav-link:hover{
+                color:$text-hover;
+            }
+            
+        }
+        .navbar-brand{
+            img{
+                width:100%;
+                height:12px;
+            }
+        }
+
+    }
+}

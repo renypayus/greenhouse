@@ -1,0 +1,47 @@
+#footer-widget, #footer{
+    margin-top:24px;
+    margin-top:24px;
+    .box{
+        padding-top:24px;
+        .menu{
+            .addr{
+                line-height:1.6;
+            }
+        }
+    }
+    @media (min-width: 768px){
+        .box:nth-child(2), .box:nth-child(3){
+            padding-left:24px;
+            padding-right:24px; 
+            .menu{
+                padding-left:14px;
+            }           
+        }
+    }
+    .widget-title{
+        font-weight:$medium-font-weight;
+        text-transform:capitalize;
+    }
+    ul{
+        padding-left:0px;
+        li{
+            list-style-type:none;
+            text-transform:uppercase;
+            font-size:$small-font-size;
+            font-weight:$medium-font-weight;
+            line-height:3;
+            color:$text-color;
+            a{
+                color:$text-color;
+            }
+            a:hover{
+                color:$primary-color;
+                text-decoration:none;
+            }
+        }
+    }
+    .site-info {
+        padding-top:24px;
+        color:$text-hover;
+    }
+}

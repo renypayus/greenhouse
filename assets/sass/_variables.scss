@@ -1,0 +1,24 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i');
+
+@font-face {
+    font-family: Gotham;  
+    src: url(assets/fonts/Gotham-Book.otf);  
+    font-weight: normal;  
+}
+
+$primary-color:#41B885;
+$text-color: #202020;
+$text-hover:rgba(32,32,32,.5);
+$bold-color:#000000;
+$light-color:#ffffff;
+$dark-color:#2b2b2b;
+$base-font-size: 14px;
+$small-font-size:10px;
+$light-font-size:12px;
+$medium-font-size:16px;
+$base-font-family: 'Gotham', sans-serif;
+$light-font-weight:200;
+$base-font-weight: 400;
+$medium-font-weight:600;
+$bold-font-weight:700;

@@ -1,0 +1,42 @@
+
+.site {
+    .content-wrapper {
+        padding-top:24px;
+
+        .entry-header{
+            .entry-meta {
+                margin-top:10px;
+                margin-bottom:10px;
+            }
+            .post-categories{
+                padding-left:0px;
+                list-style:none;
+                display:inline;
+                margin-right:5px;
+                a, a:hover{
+                    background-color:$dark-color;
+                    padding: 5px 10px;
+                    text-transform: uppercase;
+                    font-size: $small-font-size;
+                    font-weight: $bold-font-weight;
+                    color:$light-color;
+                    text-decoration:none;
+                    margin-right:5px;
+                }
+            }
+        }
+        .featured-image{
+            margin-top:10px;
+            margin-bottom:10px;
+        }
+        .entry-content{
+            line-height:1.75;
+            font-size:$medium-font-size;
+        }
+        footer.entry-meta{
+            a{
+                margin-right:5px;
+            }
+        }
+    }
+}
