@@ -1,17 +1,50 @@
 /*
-* Styling
+Theme Name: Green House
+Theme URI: http:greenhouse.id
+Author: Khaireny
+Author URI: http:linkedin.com/in/khaireny
+Description: This is an assignment 
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: greenhouse
 */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i");
 @font-face {
   font-family: Gotham;
-  src: url(assets/fonts/Gotham-Book.otf);
+  src: url("assets/fonts/Gotham-Book.woff2") format("woff2");
+  font-weight: normal; }
+@font-face {
+  font-family: Gotham Bold;
+  src: url("assets/fonts/Gotham-Bold.otf") format("opentype");
+  font-weight: normal; }
+@font-face {
+  font-family: Gotham Italic;
+  src: url("assets/fonts/Gotham-BookItalic.otf") format("opentype");
+  font-weight: normal; }
+@font-face {
+  font-family: Gotham Condensed Bold;
+  src: url("assets/fonts/Gotham-CondensedBold.woff2") format("woff2");
+  font-weight: normal; }
+@font-face {
+  font-family: Gotham Condensed;
+  src: url("assets/fonts/Gotham-CondensedBook.otf") format("opentype");
+  font-weight: normal; }
+@font-face {
+  font-family: Gotham Condensed Light;
+  src: url("assets/fonts/Gotham-CondensedLight.otf") format("opentype");
+  font-weight: normal; }
+@font-face {
+  font-family: Gotham Condensed Medium;
+  src: url("assets/fonts/Gotham-CondensedMedium.otf") format("opentype");
   font-weight: normal; }
 body {
   color: #202020;
   font-size: 14px;
   font-family: "Gotham", sans-serif;
   font-weight: 400;
-  line-height: 1.6; }
+  line-height: 1.6;
+  white-space: normal; }
 
 a {
   color: rgba(32, 32, 32, 0.5); }
@@ -25,6 +58,32 @@ a:hover {
 .entry-title a:hover {
   color: #41B885; }
 
+.size-full {
+  width: 100%;
+  height: auto; }
+
+.greenhouse_button {
+  display: inline-block !important;
+  padding: 10px 18px !important;
+  background-color: #41B885;
+  color: #ffffff;
+  border-radius: 25px;
+  border: 1px solid #41B885; }
+
+.greenhouse_button:hover {
+  display: inline-block !important;
+  padding: 10px 18px !important;
+  background-color: #ffffff;
+  color: #41B885;
+  border-radius: 25px;
+  border: 1px solid #41B885; }
+
+@media (min-width: 768px) {
+  .hidden-mobile {
+    display: none; } }
+@media (max-width: 768px) {
+  .hidden-desktop {
+    display: none; } }
 .header {
   min-height: 50px; }
   .header .navbar-greenhouse {
@@ -36,7 +95,9 @@ a:hover {
     border-top-style: solid;
     border-color: #eaeaea; }
     .header .navbar-greenhouse li {
-      font-weight: 600; }
+      font-weight: 600;
+      padding-left: 5px;
+      padding-right: 5px; }
       .header .navbar-greenhouse li .nav-link, .header .navbar-greenhouse li .dropdown-menu {
         color: #202020;
         font-size: 10px;
@@ -45,21 +106,54 @@ a:hover {
         font-weight: 600; }
       .header .navbar-greenhouse li .nav-link:hover {
         color: rgba(32, 32, 32, 0.5); }
+      .header .navbar-greenhouse li a {
+        margin-top: 3px; }
+    .header .navbar-greenhouse .active a {
+      color: rgba(32, 32, 32, 0.5); }
+    .header .navbar-greenhouse .active a:hover {
+      color: #202020; }
+    .header .navbar-greenhouse .active .dropdown-menu a {
+      color: #202020; }
+    .header .navbar-greenhouse .active .dropdown-menu a:hover {
+      color: rgba(32, 32, 32, 0.5); }
+    .header .navbar-greenhouse .active .dropdown-menu .active a {
+      color: rgba(32, 32, 32, 0.5); }
+    .header .navbar-greenhouse .active .dropdown-menu .active a:hover {
+      color: #202020; }
     .header .navbar-greenhouse .navbar-brand img {
       width: 100%;
-      height: 12px; }
+      height: 13px; }
+    @media (min-width: 960px) {
+      .header .navbar-greenhouse .booking_button a {
+        display: inline-block !important;
+        padding: 10px 18px !important;
+        background-color: #41B885;
+        color: #ffffff;
+        border-radius: 25px;
+        border: 1px solid #41B885;
+        margin-top: 0px; }
+      .header .navbar-greenhouse .booking_button a:hover {
+        display: inline-block !important;
+        padding: 10px 18px !important;
+        background-color: #ffffff;
+        color: #41B885;
+        border-radius: 25px;
+        border: 1px solid #41B885;
+        margin-top: 0px; } }
 
-.site .content-wrapper {
-  padding-top: 24px; }
-  .site .content-wrapper .entry-header .entry-meta {
+.site .content .entry-header {
+  padding-top: 14px; }
+  .site .content .entry-header .entry-meta {
     margin-top: 10px;
     margin-bottom: 10px; }
-  .site .content-wrapper .entry-header .post-categories {
+  .site .content .entry-header h1.entry-title {
+    font-family: "Gotham Bold", sans-serif; }
+  .site .content .entry-header .post-categories {
     padding-left: 0px;
     list-style: none;
     display: inline;
     margin-right: 5px; }
-    .site .content-wrapper .entry-header .post-categories a, .site .content-wrapper .entry-header .post-categories a:hover {
+    .site .content .entry-header .post-categories a, .site .content .entry-header .post-categories a:hover {
       background-color: #2b2b2b;
       padding: 5px 10px;
       text-transform: uppercase;
@@ -68,16 +162,115 @@ a:hover {
       color: #ffffff;
       text-decoration: none;
       margin-right: 5px; }
-  .site .content-wrapper .featured-image {
-    margin-top: 10px;
-    margin-bottom: 10px; }
-  .site .content-wrapper .entry-content {
-    line-height: 1.75;
-    font-size: 16px; }
-  .site .content-wrapper footer.entry-meta a {
-    margin-right: 5px; }
+.site .content .desktop-featured-image {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  height: 460px;
+  background-size: cover;
+  background-position: center; }
+.site .content .mobile-featured-image {
+  margin-top: 24px;
+  margin-bottom: 15px;
+  height: 250px;
+  background-size: cover;
+  background-position: center; }
+.site .content .entry-content {
+  line-height: 1.75;
+  font-size: 16px;
+  margin-top: 24px;
+  margin-bottom: 24px; }
+.site .content footer.entry-meta a {
+  margin-right: 5px; }
 
-/* _index.scss */
+.jumbotron {
+  background: #ffffff; }
+  .jumbotron .not-found h6 {
+    margin-top: 24px;
+    margin-bottom: 24px; }
+  .jumbotron .not-found .lead {
+    margin-top: 24px; }
+  @media (max-width: 768px) {
+    .jumbotron .not-found img {
+      margin-top: 48px; }
+    .jumbotron .not-found h6 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 14px; }
+    .jumbotron .not-found .lead {
+      margin-top: 10px;
+      font-size: 14px; } }
+
+/* Visual Composer */
+.home-vc-main-first-box {
+  margin-top: 50px; }
+  .home-vc-main-first-box h2 {
+    font-family: "Gotham Condensed Bold", sans-serif;
+    letter-spacing: 1px;
+    font-size: 2.5rem; }
+
+.home-vc-main-box h2 {
+  text-align: center;
+  font-family: "Gotham Condensed Light", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600; }
+.home-vc-main-box h4 {
+  font-family: "Gotham Bold", sans-serif; }
+
+.client-logo {
+  width: 100px;
+  height: auto;
+  margin-top: 10px;
+  padding: 10px; }
+
+.home-vc-full-width {
+  background-color: #f1f1f1; }
+  .home-vc-full-width h3 {
+    font-family: "Gotham Condensed Bold", sans-serif; }
+  .home-vc-full-width .vce {
+    margin-bottom: 0; }
+
+@media (max-width: 768px) {
+  .home-vc-main-first-box {
+    margin-top: 30px; }
+
+  .home-vc-full-width h3 {
+    padding-top: 20px; }
+  .home-vc-full-width .vce {
+    margin-bottom: 30px; }
+  .home-vc-full-width .vc-greenhouse-button {
+    margin-bottom: 24px; } }
+@media (max-width: 576px) {
+  .home-vc-main-first-box {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 60px;
+    text-align: center; }
+    .home-vc-main-first-box .vc-greenhouse-button {
+      text-align: center;
+      margin-bottom: 24px; }
+
+  .home-vc-main-box {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 15px;
+    text-align: center; }
+    .home-vc-main-box h2 {
+      margin-top: 24px; }
+    .home-vc-main-box .vc-greenhouse-button {
+      text-align: center;
+      margin-bottom: 24px; }
+
+  .home-vc-full-width {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center; }
+    .home-vc-full-width h3 {
+      padding-top: 15px; }
+    .home-vc-full-width .vce {
+      margin-bottom: 30px; }
+    .home-vc-full-width .vc-greenhouse-button {
+      text-align: center;
+      margin-bottom: 24px; } }
 #footer-widget, #footer {
   margin-top: 24px;
   margin-top: 24px; }
@@ -111,5 +304,16 @@ a:hover {
   #footer-widget .site-info, #footer .site-info {
     padding-top: 24px;
     color: rgba(32, 32, 32, 0.5); }
+  #footer-widget .socmed a, #footer .socmed a {
+    padding: 5px;
+    color: #202020;
+    font-size: 16px;
+    font-weight: 600; }
+  #footer-widget .socmed a:hover, #footer .socmed a:hover {
+    color: #41B885; }
+
+@media (max-width: 576px) {
+  #footer, #footer-widget {
+    text-align: center; } }
 
 /*# sourceMappingURL=style.css.map */

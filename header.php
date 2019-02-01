@@ -11,7 +11,6 @@
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 <?php // Loads HTML5 JavaScript file to add support for HTML5 elements in older IE versions. ?>
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/html5.js" type="text/javascript"></script>
@@ -20,7 +19,7 @@
 </head>
 
 <body >
-<div id="header" class="header" >
+<header id="header" class="header" >
 	<div class="container">
         <nav class="navbar fixed-top navbar-expand-lg navbar-greenhouse">
             <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logos/greenhouse-type-logo.svg" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop=""/></a>
@@ -41,7 +40,7 @@
             ?>
         </nav>   
 	</div>
-</div>
+</header>
 <!-- header -->
 
 <div id="page" class="site">

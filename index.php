@@ -3,55 +3,27 @@
  * Main Template
  */
 get_header(); ?>
-    <div class="container">
-		<div class="row  justify-content-md-center">
-			<div class="col-md-8 col-sm-10 col-xs-12">
-				<div class="content-wrapper">
-					<div id="content" role="main">
 
-						<?php if ( have_posts() ) : ?>
-
-						<?php /* Start the Loop */ ?>
-						<?php while ( have_posts() ) : the_post(); ?>
-							<?php get_template_part( 'content', get_post_format() ); ?>
-						<?php endwhile; ?>
-
-						<?php else : ?>
-
-						<article id="post-0" class="post no-results not-found">
-
-						<?php if ( current_user_can( 'edit_posts' ) ) :
-							// Show a different message to a logged-in user who can add posts.
-						?>
-							<header class="entry-header">
-								<h1 class="entry-title"><?php _e( 'No posts to display', 'greenhouse' ); ?></h1>
-							</header>
-
-							<div class="entry-content">
-								<p><?php printf( __( 'Ready to publish your first post? <a href="%s">Get started here</a>.', 'greenhouse' ), admin_url( 'post-new.php' ) ); ?></p>
-							</div><!-- .entry-content -->
-
-						<?php else :
-							// Show the default message to everyone else.
-						?>
-							<header class="entry-header">
-								<h1 class="entry-title"><?php _e( 'Nothing Found', 'greenhouse' ); ?></h1>
-							</header>
-
-							<div class="entry-content">
-								<p><?php _e( 'Apologies, but no results were found. Perhaps searching will help find a related post.', 'greenhouse' ); ?></p>
-								<?php get_search_form(); ?>
-							</div><!-- .entry-content -->
-						<?php endif; // end current_user_can() check ?>
-
-						</article><!-- #post-0 -->
-
-						<?php endif; // end have_posts() check ?>
-
-					</div><!-- #content -->                
-				</div> <!-- content-wrapper -->
+<div class="jumbotron h-100 text-center m-0 d-flex flex-column justify-content-center">
+	<div class="not-found">
+		<div class="row justify-content-md-center">
+			<div class="col"></div>
+			<div class="col-md-8 col-sm-10 col-xs-10">
+				<img src="https://greenhouse.id/wp-content/uploads/2018/03/404-img.jpg" alt="" class="img-fluid">
 			</div>
+			<div class="col"></div>
 		</div>
-	</div> <!-- container -->
+		
+		<h6>Oh my … we’ve got lost in the depths of the virtual jungle. <br />Doesn’t seem like the treasure is here … or whatever you were looking for.</h6>
+		<p class="lead">
+			<a class="greenhouse_button" href="#" role="button">BRING ME BACK HOME</a>
+		</p>
+	</div>
+</div>
 
-<?php get_footer(); ?>
+</div>
+
+
+<?php wp_footer(); ?>
+</body>
+</html>

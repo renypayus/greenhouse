@@ -44,4 +44,22 @@
         padding-top:24px;
         color:$text-hover;
     }
+    .socmed{
+        a{
+            padding:5px;
+            color:$text-color;
+            font-size:$medium-font-size;
+            font-weight:$medium-font-weight;
+        }
+        a:hover{
+            color:$primary-color;
+        }
+    }
+}
+
+@media (max-width: 576px){
+    #footer, #footer-widget{
+
+        text-align:center;
+    }
 }

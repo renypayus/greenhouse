@@ -1,0 +1,26 @@
+.jumbotron{
+    background:$light-color;
+    .not-found {
+        h6{
+            margin-top:24px;
+            margin-bottom:24px;
+        }
+        .lead{
+            margin-top:24px;
+        }
+        @media (max-width: 768px){
+            img{
+                margin-top:48px;
+            }
+            h6{
+                margin-top:10px;
+                margin-bottom:10px;
+                font-size:14px;
+            }
+            .lead{
+                margin-top:10px;
+                font-size:14px;
+            }
+          }
+    }
+}

@@ -1,0 +1,97 @@
+/* Visual Composer */
+
+.home-vc-main-first-box {
+    margin-top:50px;
+    h2{
+        font-family:$condensed-bold;
+        letter-spacing:1px;
+        font-size:2.5rem;
+    }
+}
+.home-vc-main-box{
+    h2{
+        text-align:center;
+        font-family:$condensed-light;
+        font-size:2.5rem;
+        font-weight:$medium-font-weight;
+    }
+    h4{
+        font-family:$bold-font;
+    }
+}
+.client-logo {
+    width:100px;
+    height:auto;
+    margin-top:10px;
+    padding:10px;
+}
+
+.home-vc-full-width{
+    background-color:#f1f1f1;
+    h3{
+        font-family:$condensed-bold;
+    }
+    .vce{
+        margin-bottom:0;
+    } 
+    
+}
+
+@media (max-width: 768px){
+    .home-vc-main-first-box{
+        margin-top:30px;
+    }
+    .home-vc-full-width{        
+        h3{
+            padding-top:20px;
+        }
+        .vce{
+            margin-bottom:30px;
+        } 
+        .vc-greenhouse-button {
+            margin-bottom:24px; 
+        }
+    }
+} 
+
+@media (max-width: 576px){
+    .home-vc-main-first-box{
+        padding-left:15px;
+        padding-right:15px;
+        margin-top:60px;
+        text-align:center;
+        .vc-greenhouse-button {
+            text-align:center;
+            margin-bottom:24px;
+        }
+    } 
+    .home-vc-main-box{
+        padding-left:15px;
+        padding-right:15px;
+        margin-top:15px;
+        text-align:center;
+        h2{
+        margin-top:24px;
+        }
+        .vc-greenhouse-button {
+            text-align:center;
+            margin-bottom:24px;
+        }
+    }
+    .home-vc-full-width{
+        padding-left:15px;
+        padding-right:15px;
+        text-align:center;
+        h3{
+            padding-top:15px;
+        }
+        .vce{
+            margin-bottom:30px;
+        } 
+        .vc-greenhouse-button {
+            text-align:center;
+            margin-bottom:24px;
+        }
+    }
+}
+  

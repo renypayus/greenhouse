@@ -1,12 +1,20 @@
 /*
-* Styling
+Theme Name: Green House
+Theme URI: http:greenhouse.id
+Author: Khaireny
+Author URI: http:linkedin.com/in/khaireny
+Description: This is an assignment 
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: greenhouse
 */
 
 @import "_variables";
 @import "_typography";
 @import "_header/navbar";
-@import "_pages/post";
 @import "_pages/content";
-@import "_pages/index";
+@import "_pages/notfound";
+@import "_pages/viscom";
 @import "_footer/footer";
- 
+  

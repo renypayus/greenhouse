@@ -15,6 +15,9 @@ function greenhouse_scripts_styles() {
 	// loads bootstrap css cdn
     wp_enqueue_style('bs_css','https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
     
+    //loads fontawesome
+    wp_enqueue_style('font-awesome','https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+
 	// Loads our main stylesheet.
 	wp_enqueue_style( 'greenhouse-style', get_stylesheet_uri() );
 
@@ -29,20 +32,39 @@ function greenhouse_setup() {
 
 	load_theme_textdomain( 'greenhouse' );
 
-	// This theme supports a variety of post formats.
-	add_theme_support( 'post-formats', array( 'aside', 'image', 'link', 'quote', 'status' ) );
 
 	// This theme uses a custom image size for featured images, displayed on "standard" posts.
 	add_theme_support( 'post-thumbnails' );
-	set_post_thumbnail_size( 624, 9999 ); // Unlimited height, soft crop
+    set_post_thumbnail_size( 624, 9999 ); // Unlimited height, soft crop
 }
 add_action( 'after_setup_theme', 'greenhouse_setup' );
+
+
+
+
 /**
  * Nav menu walker
  */
 
 require_once get_template_directory() . '/inc/class-wp-bootstrap-navwalker.php';
 register_nav_menu('primary', __('primary', 'greenhouse'));
+
+/**
+ * Filters the first and last nav menu objects in navbar
+ */
+add_filter( 'wp_nav_menu_objects', 'greenhouse_button' );
+function greenhouse_button( $objects ) {
+ 
+    // first menu
+    //$objects[1]->classes[] = 'first-menu';
+ 
+    // last menu
+    $objects[count( $objects )]->classes[] = 'booking_button';
+ 
+    // return the menu objects
+    return $objects;
+ 
+}
 
 /**
  * Filter the page menu arguments.

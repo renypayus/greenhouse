@@ -3,11 +3,48 @@
 
 @font-face {
     font-family: Gotham;  
-    src: url(assets/fonts/Gotham-Book.otf);  
+    src: url("assets/fonts/Gotham-Book.woff2")  format('woff2');  
     font-weight: normal;  
 }
 
-$primary-color:#41B885;
+@font-face {
+    font-family: Gotham Bold;  
+    src: url("assets/fonts/Gotham-Bold.otf") format('opentype');  
+    font-weight: normal;  
+}
+
+@font-face {
+    font-family: Gotham Italic;  
+    src: url("assets/fonts/Gotham-BookItalic.otf") format('opentype');  
+    font-weight: normal;  
+}
+
+@font-face {
+    font-family: Gotham Condensed Bold;  
+    src: url("assets/fonts/Gotham-CondensedBold.woff2") format('woff2');  
+    font-weight: normal;  
+}
+
+@font-face {
+    font-family: Gotham Condensed;  
+    src: url("assets/fonts/Gotham-CondensedBook.otf") format('opentype');  
+    font-weight: normal;  
+}
+
+@font-face {
+    font-family: Gotham Condensed Light;  
+    src: url("assets/fonts/Gotham-CondensedLight.otf") format('opentype');  
+    font-weight: normal;  
+}
+
+@font-face {
+    font-family: Gotham Condensed Medium;  
+    src: url("assets/fonts/Gotham-CondensedMedium.otf") format('opentype');  
+    font-weight: normal;  
+}
+
+
+$primary-color:#41B885; 
 $text-color: #202020;
 $text-hover:rgba(32,32,32,.5);
 $bold-color:#000000;
@@ -18,6 +55,12 @@ $small-font-size:10px;
 $light-font-size:12px;
 $medium-font-size:16px;
 $base-font-family: 'Gotham', sans-serif;
+$bold-font:'Gotham Bold', sans-serif;
+$italic-font:'Gotham Italic', sans-serif;
+$condensed-font:'Gotham Condensed', sans-serif;
+$condensed-light:'Gotham Condensed Light', sans-serif;
+$condensed-medium:'Gotham Condensed Medium', sans-serif;
+$condensed-bold:'Gotham Condensed Bold', sans-serif;
 $light-font-weight:200;
 $base-font-weight: 400;
 $medium-font-weight:600;

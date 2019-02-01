@@ -5,6 +5,7 @@ body {
   font-family: $base-font-family;
   font-weight: $base-font-weight;
   line-height: 1.6;
+  white-space:normal;
 }
 
 a{
@@ -23,4 +24,39 @@ a:hover{
     color:$primary-color;
   }
 }
+
+.size-full{
+  width:100%;
+  height:auto;
+}
+
+.greenhouse_button {
+  display: inline-block !important;
+  padding: 10px 18px !important;
+  background-color: $primary-color;
+  color: $light-color ;
+  border-radius: 25px;
+  border: 1px solid $primary-color;
+}
+.greenhouse_button:hover{
+  display: inline-block !important;
+  padding: 10px 18px !important;
+  background-color: $light-color;
+  color: $primary-color;
+  border-radius: 25px;
+  border: 1px solid $primary-color;
+}
+
+@media (min-width: 768px){
+  .hidden-mobile{
+    display:none;
+  }
+}
+@media (max-width: 768px){
+  .hidden-desktop{
+    display:none;
+  }
+
+}
+
 
