@@ -33,10 +33,12 @@ get_header(); ?>
                         </div>
                     </div>
                 </div><!-- container -->
-                <div class="desktop-featured-image hidden-desktop" style="background-image: url(<?php echo esc_url($featured_img_url) ;?>);">
-                </div><!-- desktop featured image -->
-                <div class="mobile-featured-image hidden-mobile" style="background-image: url(<?php echo esc_url($featured_img_url) ;?>);">
-                </div><!-- mobile featured image -->
+                <?php if ( has_post_thumbnail() ) { ?>
+                    <div class="desktop-featured-image hidden-desktop" style="background-image: url(<?php echo esc_url($featured_img_url) ;?>);">
+                    </div><!-- desktop featured image -->
+                    <div class="mobile-featured-image hidden-mobile" style="background-image: url(<?php echo esc_url($featured_img_url) ;?>);">
+                    </div><!-- mobile featured image -->
+                <?php } ?>
                 <div class="container">               
                     <div class="row  justify-content-md-center">
                         <div class="col-md-8 col-sm-10 col-xs-12">		
